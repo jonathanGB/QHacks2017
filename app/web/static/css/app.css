@@ -1,1 +1,85 @@
-/* This file is for your main application css. */
+body, html, * {
+  font-family: 'Open Sans', sans-serif; }
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 3px solid #4CAF50;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 15px;
+  z-index: 999; }
+
+#logo {
+  float: left; }
+  #logo h1 {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0;
+    color: #4CAF50; }
+
+#nav {
+  float: right; }
+  #nav ul {
+    margin: 0;
+    padding: 0; }
+  #nav li {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    font-size: 0.9em;
+    margin: 0 10px; }
+  #nav a {
+    color: #39394e; }
+    #nav a:hover {
+      color: #4CAF50; }
+
+#index {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  min-height: 650px;
+  height: 100%; }
+
+#index-tagline {
+  margin-top: 50%;
+  font-weight: 800;
+  color: #fff;
+  padding-top: 75px; }
+
+#index-signup {
+  margin-top: 50%;
+  background: #fff;
+  padding: 15px;
+  text-align: center; }
+  #index-signup h2 {
+    margin: 0 0 15px 0;
+    color: #39394e;
+    font-size: 1.5em; }
+
+.create-input {
+  border-radius: 0;
+  border: 1px solid #e2e2e2;
+  box-shadow: none;
+  width: 100%; }
+
+.create-submit {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  background: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all; }
+  .create-submit:hover {
+    background: #3d8b40; }

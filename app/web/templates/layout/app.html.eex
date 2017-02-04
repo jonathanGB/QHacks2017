@@ -8,19 +8,35 @@
     <meta name="author" content="">
 
     <title>Hello App!</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="<%= static_path(@conn, "/css/foundation.css") %>">
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
 
   <body>
     <div class="container">
-      <header class="header">
-        <nav role="navigation">
-          <ul class="nav nav-pills pull-right">
-            <li><a href="http://www.phoenixframework.org/docs">Get Started</a></li>
-          </ul>
-        </nav>
-        <span class="logo"></span>
-      </header>
+		<div id="header" class="clearfix">
+			<div class="row">
+				<div class="small-12 columns">
+					<div id="logo">
+						<a href="#">
+							<h1><i class="fa fa-home" aria-hidden="true"></i> RuneMate</h1>
+						</a>
+					</div>
+					<!-- End logo -->
+
+					<div id="nav">
+						<ul>
+							<li><a href="#">Sign Up</a></li>
+							<li><a href="#">Login</a></li>
+						</ul>
+					</div>
+					<!-- End nav -->
+				</div>
+			</div>
+		</div>
+		<!-- End header -->
 
       <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
       <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
@@ -30,6 +46,8 @@
       </main>
 
     </div> <!-- /container -->
+	<script src="<%= static_path(@conn, "/js/jquery.js") %>"></script>
+	<script src="<%= static_path(@conn, "/js/foundation.js") %>"></script>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>
