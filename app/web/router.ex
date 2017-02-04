@@ -17,7 +17,7 @@ defmodule App.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
-		get "/runescape", RunescapeController, :index
+    get "/runescape", RunescapeController, :index
   end
 
   # Other scopes may use custom stacks.
