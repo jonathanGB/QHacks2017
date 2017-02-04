@@ -13,7 +13,7 @@ config :logger, level: :warn
 config :app, App.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  password: "runescape",
   database: "app_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

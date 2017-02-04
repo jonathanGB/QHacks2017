@@ -37,7 +37,7 @@ config :phoenix, :stacktrace_depth, 20
 config :app, App.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  password: "runescape",
   database: "app_dev",
   hostname: "localhost",
   pool_size: 10
