@@ -1,0 +1,48 @@
+<h2>Show user</h2>
+
+<ul>
+
+  <li>
+    <strong>Fname:</strong>
+    <%= @user.fName %>
+  </li>
+
+  <li>
+    <strong>Lname:</strong>
+    <%= @user.lName %>
+  </li>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @user.email %>
+  </li>
+
+  <li>
+    <strong>Age:</strong>
+    <%= @user.age %>
+  </li>
+
+  <li>
+    <strong>Gender:</strong>
+    <%= @user.gender %>
+  </li>
+
+  <li>
+    <strong>Lat:</strong>
+    <%= @user.lat %>
+  </li>
+
+  <li>
+    <strong>Lng:</strong>
+    <%= @user.lng %>
+  </li>
+
+  <li>
+    <strong>Password:</strong>
+    <%= @user.password %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: user_path(@conn, :edit, @user) %>
+<%= link "Back", to: user_path(@conn, :index) %>
