@@ -1,0 +1,6 @@
+<h2>Edit taimoor</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: taimoor_path(@conn, :update, @taimoor) %>
+
+<%= link "Back", to: taimoor_path(@conn, :index) %>

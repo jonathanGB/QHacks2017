@@ -18,6 +18,7 @@ defmodule App.Router do
 
     get "/", PageController, :index
     get "/runescape", RunescapeController, :index
+		resources "/taimoors", TaimoorController
   end
 
   # Other scopes may use custom stacks.

@@ -1,0 +1,18 @@
+<h2>Show taimoor</h2>
+
+<ul>
+
+  <li>
+    <strong>Bugs:</strong>
+    <%= @taimoor.bugs %>
+  </li>
+
+  <li>
+    <strong>Shirtcolor:</strong>
+    <%= @taimoor.shirtColor %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: taimoor_path(@conn, :edit, @taimoor) %>
+<%= link "Back", to: taimoor_path(@conn, :index) %>

@@ -1,0 +1,28 @@
+<h2>Listing tmoneys</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Bugs</th>
+      <th>Shirtcolor</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for taimoor <- @tmoneys do %>
+    <tr>
+      <td><%= taimoor.bugs %></td>
+      <td><%= taimoor.shirtColor %></td>
+
+      <td class="text-right">
+        <%= link "Show", to: taimoor_path(@conn, :show, taimoor), class: "btn btn-default btn-xs" %>
+        <%= link "Edit", to: taimoor_path(@conn, :edit, taimoor), class: "btn btn-default btn-xs" %>
+        <%= link "Delete", to: taimoor_path(@conn, :delete, taimoor), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= link "New taimoor", to: taimoor_path(@conn, :new) %>
