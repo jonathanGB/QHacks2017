@@ -18,6 +18,7 @@ defmodule App.Router do
 
     get "/", PageController, :index
     get "/runescape", RunescapeController, :index
+		get "/jonatain/:name", JonatainVariableController, :index
   end
 
   # Other scopes may use custom stacks.
